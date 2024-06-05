@@ -12,8 +12,8 @@ import { OpenAI } from "openai";
 // OpenAI SDKのインスタンスを生成
 const openai = new OpenAI();
 
-// 出力する音声ファイルのパス
-const speechFile = path.resolve("./speech.mp3");
+// OpenAI APIを利用してテキストから音声を生成する
+const speechFile = path.resolve("./speech-demo01.mp3");
 
 async function main() {
   // OpenAI APIを利用してテキストから音声を生成
